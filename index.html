@@ -2,11 +2,17 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
     <title>NoirChat</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 
@@ -16,85 +22,193 @@
 <div class="chat-app">
 
 
-    <div class="header">
-        <h1>NoirChat</h1>
-        <button class="new-chat">+</button>
-    </div>
+    <!-- CHATS SCREEN -->
+
+    <div id="chats-screen">
 
 
-    <div class="chats">
+        <div class="header">
 
+            <h1>NoirChat</h1>
 
-        <div class="chat" onclick="openChat('Alex')">
-
-            <div class="avatar">A</div>
-
-            <div>
-                <h3>Alex</h3>
-                <p>Welcome to NoirChat</p>
-            </div>
-
-        </div>
-
-
-
-        <div class="chat" onclick="openChat('Noir Team')">
-
-            <div class="avatar">N</div>
-
-            <div>
-                <h3>Noir Team</h3>
-                <p>Project updates</p>
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-
-    <div id="message-screen" class="hidden">
-
-
-        <h2 id="chat-name"></h2>
-
-
-        <div id="messages"></div>
-
-
-        <div class="send-box">
-
-            <input id="message-input" placeholder="Message">
-
-            <button onclick="sendMessage()">
-                Send
+            <button class="new-chat">
+                +
             </button>
 
         </div>
 
 
+
+        <div class="chats">
+
+
+            <div class="chat" onclick="openChat('Alex')">
+
+                <div class="avatar">
+                    A
+                </div>
+
+                <div>
+
+                    <h3>Alex</h3>
+
+                    <p>
+                        Welcome to NoirChat
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+
+            <div class="chat" onclick="openChat('Noir Team')">
+
+                <div class="avatar">
+                    N
+                </div>
+
+                <div>
+
+                    <h3>Noir Team</h3>
+
+                    <p>
+                        Project updates
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
     </div>
 
 
-</div>
 
 
-<div class="profile-screen hidden">
 
-    <div class="profile-avatar">
-        N
+    <!-- MESSAGE SCREEN -->
+
+
+    <div id="message-screen" class="hidden">
+
+
+        <div class="chat-header">
+
+
+            <button onclick="backToChats()">
+                ←
+            </button>
+
+
+            <h2 id="chat-name">
+                
+            </h2>
+
+
+        </div>
+
+
+
+        <div id="messages">
+
+        </div>
+
+
+
+        <div class="send-box">
+
+
+            <input 
+            id="message-input"
+            placeholder="Message">
+
+
+            <button onclick="sendMessage()">
+
+                ➤
+
+            </button>
+
+
+        </div>
+
+
     </div>
 
 
-    <h2>Noir User</h2>
-
-    <p class="online">
-        ● Online
-    </p>
 
 
-    <div class="profile-buttons">
+
+    <!-- CONTACTS -->
+
+
+    <div id="contacts-screen" class="hidden">
+
+
+        <h2>
+            Contacts
+        </h2>
+
+
+
+        <div class="chat">
+
+
+            <div class="avatar">
+                M
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Max
+                </h3>
+
+                <p>
+                    Online
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- PROFILE -->
+
+
+    <div id="profile-screen" class="hidden">
+
+
+        <div class="profile-avatar">
+
+            N
+
+        </div>
+
+
+        <h2>
+            Noir User
+        </h2>
+
+
+        <p class="online">
+            ● Online
+        </p>
+
+
 
         <button>
             Edit profile
@@ -110,51 +224,68 @@
             Settings
         </button>
 
-    </div>
-
-</div>
-<div class="contacts-screen hidden">
-
-    <h2>Contacts</h2>
-
-    <div class="chat">
-
-        <div class="avatar">
-            M
-        </div>
-
-        <div>
-            <h3>Max</h3>
-            <p>Online</p>
-        </div>
 
     </div>
 
+
+
+
 </div>
+
+
+
+
+
+<!-- BOTTOM MENU -->
+
+
+<div class="bottom-bar">
+
+
+<button onclick="showScreen('chats')">
+
+💬
+
+<span>
+Chats
+</span>
+
+</button>
+
+
+
+<button onclick="showScreen('contacts')">
+
+👥
+
+<span>
+Contacts
+</span>
+
+</button>
+
+
+
+<button onclick="showScreen('profile')">
+
+⚙️
+
+<span>
+Profile
+</span>
+
+</button>
+
+
+</div>
+
+
+
 
 <script src="app.js"></script>
 
-<div class="bottom-bar">
+
 </body>
 
+
 </html>
-
-
-    <button onclick="showScreen('chats')">
-        💬
-        <span>Chats</span>
-    </button>
-
-
-    <button onclick="showScreen('contacts')">
-        👥
-        <span>Contacts</span>
-    </button>
-
-
-    <button onclick="showScreen('profile')">
-        ⚙️
-        <span>Profile</span>
-    </button>
-
-</div>
