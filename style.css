@@ -598,3 +598,53 @@ nav button {
     font-size: 13px;
 
 }
+.chat-info {
+    flex: 1;
+}
+
+
+.chat-title {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+
+.chat-title h3 {
+
+    margin: 0;
+
+}
+
+
+.chat-title span {
+
+    font-size: 12px;
+
+    color: #777;
+
+}
+
+
+.chat-info p {
+
+    margin-top: 6px;
+
+    color: #aaa;
+
+}
+
+
+.online-dot {
+
+    color: #00ff88;
+
+    font-size: 10px;
+
+    margin-left: 5px;
+
+}
