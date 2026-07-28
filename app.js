@@ -1,15 +1,13 @@
-const button = document.querySelector("button");
-const input = document.querySelector("input");
+const chats = document.querySelectorAll(".chat");
 
-button.onclick = function() {
+chats.forEach(chat => {
 
-    let username = input.value;
+    chat.onclick = function() {
 
-    if(username === "") {
-        alert("Введите имя пользователя");
-    } 
-    else {
-        alert("Добро пожаловать в NoirChat, " + username + "!");
-    }
+        let name = chat.querySelector("h3").innerText;
 
-};
+        alert("Открыт чат с " + name);
+
+    };
+
+});
