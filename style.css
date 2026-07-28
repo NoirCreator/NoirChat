@@ -403,3 +403,69 @@ html, body {
 .chat p {
     font-size: 16px;
 }
+/* NoirChat mobile app frame */
+
+body {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.chat-app {
+    width: 100%;
+    max-width: 430px;
+    height: 100dvh;
+
+    background: #000;
+
+    overflow: hidden;
+
+    border-radius: 0;
+}
+
+
+.header {
+    padding: 45px 20px 20px;
+}
+
+
+.header h1 {
+    font-size: 34px;
+}
+
+
+.chats {
+    padding: 10px 15px;
+}
+
+
+.chat {
+    min-height: 70px;
+
+    padding: 15px;
+
+    background: #111;
+
+    border-radius: 22px;
+
+    margin-bottom: 12px;
+}
+
+
+.avatar {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 20px;
+}
+
+
+.bottom-bar {
+    height: 80px;
+
+    background: #050505;
+
+    border-top: 1px solid #222;
+}
