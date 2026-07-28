@@ -402,3 +402,21 @@ body {
     font-size: 17px;
 
 }
+.chat {
+    border-bottom: 1px solid #222;
+    background: transparent;
+    border-radius: 0;
+}
+
+
+.chat-info {
+    flex: 1;
+}
+
+
+.time {
+    color: #777;
+    font-size: 13px;
+    align-self: flex-start;
+    margin-top: 5px;
+}
