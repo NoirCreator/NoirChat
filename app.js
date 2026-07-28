@@ -20,9 +20,15 @@ function openChat(name) {
     .getElementById("messages")
     .innerHTML = `
 
-        <div class="message">
+        <div class="message incoming">
 
-            Привет! Добро пожаловать в NoirChat 🖤
+            <div>
+                Привет! Добро пожаловать в NoirChat 🖤
+            </div>
+
+            <span>
+                12:40
+            </span>
 
         </div>
 
