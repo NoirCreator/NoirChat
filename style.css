@@ -1,7 +1,8 @@
 body {
     margin: 0;
     height: 100vh;
-    background: linear-gradient(160deg, #050505, #260044);
+    background: #000000;
+    color: white;
     font-family: Arial, sans-serif;
     color: white;
 }
@@ -36,7 +37,7 @@ body {
     height: 45px;
     border-radius: 50%;
     border: none;
-    background: #8b35ff;
+    background: #000000;
     color: white;
     font-size: 28px;
 }
@@ -53,7 +54,7 @@ body {
     border-radius: 20px;
     border: none;
     outline: none;
-    background: #151515;
+    background: #000000;
     color: white;
 }
 
@@ -78,7 +79,7 @@ body {
     width: 55px;
     height: 55px;
     border-radius: 18px;
-    background: #8b35ff;
+    background: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +148,7 @@ body {
     width: 80px;
     border-radius: 15px;
     border: none;
-    background: #8b35ff;
+    background: #FFFFFF;
     color: white;
 }
 .bottom-bar {
