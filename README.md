@@ -1,6 +1,4 @@
 # NoirChat
-Modern messenger built with Flutter
-# NoirChat
 
 NoirChat — современный мессенджер с уникальным темным дизайном, плавными анимациями и удобным интерфейсом.
 
