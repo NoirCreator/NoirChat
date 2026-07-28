@@ -501,3 +501,31 @@ nav button {
     display: flex;
     flex-direction: column;
 }
+#messages {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.outgoing {
+    align-self: flex-end;
+    background: white;
+    color: black;
+
+    margin-left: auto;
+    margin-right: 0;
+
+    border-bottom-right-radius: 5px;
+}
+
+
+.incoming {
+    align-self: flex-start;
+    background: #151515;
+    color: white;
+
+    margin-left: 0;
+    margin-right: auto;
+
+    border-bottom-left-radius: 5px;
+}
