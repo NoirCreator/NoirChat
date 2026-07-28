@@ -1,13 +1,45 @@
-const chats = document.querySelectorAll(".chat");
+function openChat(name) {
 
-chats.forEach(chat => {
+    document.querySelector(".chats").style.display = "none";
+    document.querySelector(".header").style.display = "none";
 
-    chat.onclick = function() {
+    document
+    .getElementById("message-screen")
+    .classList.remove("hidden");
 
-        let name = chat.querySelector("h3").innerText;
 
-        alert("Открыт чат с " + name);
+    document
+    .getElementById("chat-name")
+    .innerText = name;
 
-    };
+}
 
-});
+
+
+function sendMessage() {
+
+    let input = document.getElementById("message-input");
+
+    let text = input.value;
+
+
+    if(text === "") {
+        return;
+    }
+
+
+    let message = document.createElement("div");
+
+    message.className = "message";
+
+    message.innerText = text;
+
+
+    document
+    .getElementById("messages")
+    .appendChild(message);
+
+
+    input.value = "";
+
+}
