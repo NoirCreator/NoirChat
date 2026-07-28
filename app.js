@@ -13,6 +13,8 @@ function openChat(name) {
     document
     .getElementById("chat-name")
     .innerText = name;
+    
+    document.querySelector(".chat-avatar").innerText = name[0];
 
 
 
