@@ -649,37 +649,9 @@ nav button {
 
 }
 /* Анимация экранов NoirChat */
-
-#chats-screen {
-    transition: 0.35s ease;
-}
-
-
 #message-screen {
-
-    animation: openChat 0.35s ease;
-
-}
-
-
-
-@keyframes openChat {
-
-    from {
-
-        transform: translateX(100%);
-
-        opacity: 0;
-
-    }
-
-
-    to {
-
-        transform: translateX(0);
-
-        opacity: 1;
-
-    }
-
+    background: #000;
+    min-height: 100vh;
+    color: white;
+    position: relative;
 }
