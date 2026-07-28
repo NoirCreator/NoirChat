@@ -1,7 +1,15 @@
+let currentChat = "";
+
+
 function openChat(name) {
 
-    document.querySelector(".chats").style.display = "none";
-    document.querySelector(".header").style.display = "none";
+    currentChat = name;
+
+
+    document
+    .getElementById("chats-screen")
+    .classList.add("hidden");
+
 
     document
     .getElementById("message-screen")
@@ -16,6 +24,22 @@ function openChat(name) {
 
 
 
+function backToChats() {
+
+    document
+    .getElementById("message-screen")
+    .classList.add("hidden");
+
+
+    document
+    .getElementById("chats-screen")
+    .classList.remove("hidden");
+
+}
+
+
+
+
 function sendMessage() {
 
     let input = document.getElementById("message-input");
@@ -23,14 +47,16 @@ function sendMessage() {
     let text = input.value;
 
 
-    if(text === "") {
+    if(text.trim() === "") {
         return;
     }
 
 
     let message = document.createElement("div");
 
+
     message.className = "message";
+
 
     message.innerText = text;
 
@@ -43,35 +69,54 @@ function sendMessage() {
     input.value = "";
 
 }
+
+
+
+
 function showScreen(screen) {
 
-    const chats = document.querySelector(".chats");
-    const profile = document.querySelector(".profile-screen");
-    const contacts = document.querySelector(".contacts-screen");
+
+    document
+    .getElementById("chats-screen")
+    .classList.add("hidden");
 
 
-    chats.style.display = "none";
-    profile.classList.add("hidden");
-    contacts.classList.add("hidden");
+    document
+    .getElementById("contacts-screen")
+    .classList.add("hidden");
+
+
+    document
+    .getElementById("profile-screen")
+    .classList.add("hidden");
+
 
 
     if(screen === "chats") {
 
-        chats.style.display = "block";
+        document
+        .getElementById("chats-screen")
+        .classList.remove("hidden");
 
     }
 
-
-    if(screen === "profile") {
-
-        profile.classList.remove("hidden");
-
-    }
 
 
     if(screen === "contacts") {
 
-        contacts.classList.remove("hidden");
+        document
+        .getElementById("contacts-screen")
+        .classList.remove("hidden");
+
+    }
+
+
+
+    if(screen === "profile") {
+
+        document
+        .getElementById("profile-screen")
+        .classList.remove("hidden");
 
     }
 
