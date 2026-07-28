@@ -243,3 +243,47 @@ body::after {
     }
 
 }
+.avatar {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 22px;
+
+    background: linear-gradient(
+        135deg,
+        #8b35ff,
+        #4b0082
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-size: 26px;
+    font-weight: bold;
+
+    box-shadow:
+    0 0 20px rgba(139,53,255,0.5);
+
+    transition: 0.3s;
+}
+
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+
+.chat {
+    transition: 0.3s;
+}
+
+
+.chat:hover {
+    transform: translateX(8px);
+
+    background:
+    rgba(255,255,255,0.1);
+}
