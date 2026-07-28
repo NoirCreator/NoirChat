@@ -481,3 +481,23 @@ body {
     flex: 1;
     overflow-y: auto;
 }
+#message-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #000;
+}
+
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 45px 20px 20px;
+}
+
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 24px;
+}
