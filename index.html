@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>NoirChat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
+
 <div class="chat-app">
+
 
     <div class="header">
         <h1>NoirChat</h1>
@@ -15,39 +19,67 @@
     </div>
 
 
-    <div class="search">
-        <input placeholder="Search chats...">
-    </div>
-
-
     <div class="chats">
 
-        <div class="chat">
+
+        <div class="chat" onclick="openChat('Alex')">
+
             <div class="avatar">A</div>
 
             <div>
                 <h3>Alex</h3>
                 <p>Welcome to NoirChat</p>
             </div>
+
         </div>
 
 
-        <div class="chat">
+
+        <div class="chat" onclick="openChat('Noir Team')">
+
             <div class="avatar">N</div>
 
             <div>
                 <h3>Noir Team</h3>
                 <p>Project updates</p>
             </div>
+
         </div>
 
 
     </div>
 
+
+
+    <div id="message-screen" class="hidden">
+
+
+        <h2 id="chat-name"></h2>
+
+
+        <div id="messages"></div>
+
+
+        <div class="send-box">
+
+            <input id="message-input" placeholder="Message">
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+
+    </div>
+
+
 </div>
+
 
 
 <script src="app.js"></script>
 
 </body>
+
 </html>
