@@ -467,3 +467,23 @@ nav button {
     }
 
 }
+.outgoing {
+    background: white;
+    color: black;
+
+    margin-left: auto;
+    margin-right: 0;
+
+    border-bottom-right-radius: 5px;
+}
+
+
+.incoming {
+    background: #151515;
+    color: white;
+
+    margin-left: 0;
+    margin-right: auto;
+
+    border-bottom-left-radius: 5px;
+}
