@@ -287,3 +287,74 @@ body::after {
     background:
     rgba(255,255,255,0.1);
 }
+.profile-screen {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+
+    margin: 20px auto;
+
+    border-radius: 40px;
+
+    background: linear-gradient(
+        135deg,
+        #8b35ff,
+        #2b0050
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    font-weight: bold;
+
+    box-shadow:
+    0 0 40px rgba(139,53,255,0.6);
+}
+
+
+.profile-screen h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+
+.online {
+    color: #8bff9b;
+    font-size: 16px;
+}
+
+
+.profile-buttons {
+    margin-top: 40px;
+}
+
+
+.profile-buttons button {
+
+    width: 85%;
+
+    padding: 16px;
+
+    margin: 10px;
+
+    border-radius: 20px;
+
+    border: none;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    color: white;
+
+    font-size: 17px;
+
+    backdrop-filter: blur(10px);
+
+}
