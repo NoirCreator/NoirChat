@@ -460,3 +460,24 @@ body {
 
     margin-left: 8px;
 }
+#message-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+#message-screen.hidden {
+    display: none;
+}
+
+
+.chat-header {
+    height: 90px;
+}
+
+
+#messages {
+    flex: 1;
+    overflow-y: auto;
+}
