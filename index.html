@@ -7,10 +7,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="apple-mobile-web-app-capable" content="yes">
-
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -19,60 +15,133 @@
 <body>
 
 
-<div class="chat-app">
+<div class="app">
 
 
-    <!-- CHATS SCREEN -->
+    <!-- ЧАТЫ -->
 
     <div id="chats-screen">
 
-    <div class="header">
-        <h1>NoirChat</h1>
-        <button class="new-chat">+</button>
+
+        <header>
+
+            <h1>
+                NoirChat
+            </h1>
+
+            <button>
+                +
+            </button>
+
+        </header>
+
+
+
+        <div class="chat-list">
+
+
+            <div class="chat" onclick="openChat('Alex')">
+
+
+                <div class="avatar">
+                    A
+                </div>
+
+
+                <div class="chat-text">
+
+                    <h3>
+                        Alex
+                    </h3>
+
+                    <p>
+                        Welcome to NoirChat
+                    </p>
+
+                </div>
+
+
+                <span class="time">
+                    12:45
+                </span>
+
+
+            </div>
+
+
+
+
+
+            <div class="chat" onclick="openChat('Noir Team')">
+
+
+                <div class="avatar">
+                    N
+                </div>
+
+
+                <div class="chat-text">
+
+                    <h3>
+                        Noir Team
+                    </h3>
+
+                    <p>
+                        Project updates
+                    </p>
+
+                </div>
+
+
+                <span class="time">
+                    09:20
+                </span>
+
+
+            </div>
+
+
+
+        </div>
+
+
     </div>
 
 
-    <div class="chats">
-
-        <!-- Alex -->
-        <!-- Noir Team -->
-
-    </div>
-
-</div>
 
 
-    <!-- MESSAGE SCREEN -->
+
+    <!-- ЭКРАН ЧАТА -->
 
 
     <div id="message-screen" class="hidden">
 
-    <div style="padding:40px; color:white;">
 
-        <button onclick="backToChats()" style="font-size:30px;">
-            ←
-        </button>
-
-        <h2 id="chat-name">
-            Alex
-        </h2>
-
-        <p>
-            ТЕСТ ЭКРАНА ЧАТА
-        </p>
-
-    </div>
-
-</div>
+        <div class="chat-top">
 
 
-        <div id="messages">
+            <button onclick="backToChats()">
+                ←
+            </button>
+
+
+            <h2 id="chat-name">
+                
+            </h2>
+
 
         </div>
 
 
 
-        <div class="send-box">
+        <div id="messages">
+
+
+        </div>
+
+
+
+        <div class="input-box">
 
 
             <input 
@@ -81,9 +150,7 @@
 
 
             <button onclick="sendMessage()">
-
                 ➤
-
             </button>
 
 
@@ -96,7 +163,35 @@
 
 
 
-    <!-- CONTACTS -->
+
+    <!-- ПРОФИЛЬ -->
+
+
+    <div id="profile-screen" class="hidden">
+
+
+        <div class="profile-avatar">
+            N
+        </div>
+
+
+        <h2>
+            Noir User
+        </h2>
+
+
+        <p>
+            ● Online
+        </p>
+
+
+    </div>
+
+
+
+
+
+    <!-- КОНТАКТЫ -->
 
 
     <div id="contacts-screen" class="hidden">
@@ -107,74 +202,18 @@
         </h2>
 
 
-
         <div class="chat">
-
 
             <div class="avatar">
                 M
             </div>
 
 
-            <div>
-
-                <h3>
-                    Max
-                </h3>
-
-                <p>
-                    Online
-                </p>
-
-            </div>
-
+            <h3>
+                Max
+            </h3>
 
         </div>
-
-
-    </div>
-
-
-
-
-
-    <!-- PROFILE -->
-
-
-    <div id="profile-screen" class="hidden">
-
-
-        <div class="profile-avatar">
-
-            N
-
-        </div>
-
-
-        <h2>
-            Noir User
-        </h2>
-
-
-        <p class="online">
-            ● Online
-        </p>
-
-
-
-        <button>
-            Edit profile
-        </button>
-
-
-        <button>
-            Privacy
-        </button>
-
-
-        <button>
-            Settings
-        </button>
 
 
     </div>
@@ -188,19 +227,15 @@
 
 
 
-<!-- BOTTOM MENU -->
+<!-- НИЖНЯЯ ПАНЕЛЬ -->
 
 
-<div class="bottom-bar">
+<nav>
 
 
 <button onclick="showScreen('chats')">
 
 💬
-
-<span>
-Chats
-</span>
 
 </button>
 
@@ -210,10 +245,6 @@ Chats
 
 👥
 
-<span>
-Contacts
-</span>
-
 </button>
 
 
@@ -222,15 +253,10 @@ Contacts
 
 ⚙️
 
-<span>
-Profile
-</span>
-
 </button>
 
 
-</div>
-
+</nav>
 
 
 
@@ -238,6 +264,5 @@ Profile
 
 
 </body>
-
 
 </html>
