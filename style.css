@@ -1,52 +1,98 @@
 body {
     margin: 0;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #080808, #2b0a3d);
+    background: linear-gradient(160deg, #050505, #260044);
     font-family: Arial, sans-serif;
     color: white;
 }
 
-.container {
-    text-align: center;
-    background: rgba(255,255,255,0.05);
-    padding: 40px;
-    border-radius: 25px;
-    backdrop-filter: blur(10px);
+
+.chat-app {
+    width: 100%;
+    max-width: 420px;
+    height: 100vh;
+    margin: auto;
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(15px);
 }
 
-h1 {
-    font-size: 45px;
-    margin-bottom: 5px;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+
+.header h1 {
+    font-size: 32px;
     letter-spacing: 2px;
 }
 
-p {
-    color: #b48cff;
-    margin-bottom: 30px;
-}
 
-input {
-    width: 230px;
-    padding: 15px;
-    border-radius: 15px;
+.new-chat {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
     border: none;
-    outline: none;
-    background: #181818;
-    color: white;
-    font-size: 16px;
-}
-
-button {
-    margin-top: 20px;
-    width: 260px;
-    padding: 15px;
-    border: none;
-    border-radius: 15px;
     background: #8b35ff;
     color: white;
-    font-size: 18px;
-    cursor: pointer;
+    font-size: 28px;
+}
+
+
+.search {
+    padding: 0 20px;
+}
+
+
+.search input {
+    width: 90%;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #151515;
+    color: white;
+}
+
+
+.chats {
+    padding: 20px;
+}
+
+
+.chat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 20px;
+}
+
+
+.avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 18px;
+    background: #8b35ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.chat h3 {
+    margin: 0;
+}
+
+
+.chat p {
+    margin: 5px 0 0;
+    color: #aaa;
 }
