@@ -19,7 +19,19 @@ function openChat(name) {
     document
     .getElementById("chat-name")
     .innerText = name;
+document.getElementById("messages").innerHTML = `
+<div class="message other-message">
 
+<div>
+Привет! Это NoirChat 🖤
+</div>
+
+<span>
+12:40
+</span>
+
+</div>
+`;
 }
 
 
