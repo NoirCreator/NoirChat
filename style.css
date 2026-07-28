@@ -655,3 +655,25 @@ nav button {
     color: white;
     position: relative;
 }
+#message-screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #000;
+    color: white;
+}
+
+
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+
+.send-box {
+    position: fixed;
+    bottom: 20px;
+    left: 5%;
+    width: 90%;
+}
