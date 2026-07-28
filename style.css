@@ -150,3 +150,40 @@ body {
     background: #8b35ff;
     color: white;
 }
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+
+    background: rgba(10,10,10,0.85);
+    backdrop-filter: blur(15px);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+.bottom-bar button {
+    background: none;
+    border: none;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 22px;
+}
+
+
+.bottom-bar span {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #aaa;
+}
