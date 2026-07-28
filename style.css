@@ -370,8 +370,40 @@ html, body {
 
 .chat-app {
     width: 100%;
-    max-width: none;
+    max-width: 430px;
     height: 100vh;
 
-    border-radius: 0;
+    margin: auto;
+
+    background: rgba(0,0,0,0.35);
+
+    border-radius: 35px;
+
+    overflow: hidden;
+}
+.header h1 {
+    font-size: 38px;
+}
+
+
+.chat {
+    padding: 20px;
+    border-radius: 25px;
+}
+
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+}
+
+
+.chat h3 {
+    font-size: 22px;
+}
+
+
+.chat p {
+    font-size: 16px;
 }
