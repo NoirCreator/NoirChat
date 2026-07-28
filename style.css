@@ -487,3 +487,17 @@ nav button {
 
     border-bottom-left-radius: 5px;
 }
+.my-message {
+    align-self: flex-end !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+
+    background: white;
+    color: black;
+}
+
+
+#messages {
+    display: flex;
+    flex-direction: column;
+}
