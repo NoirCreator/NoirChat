@@ -358,3 +358,20 @@ body::after {
     backdrop-filter: blur(10px);
 
 }
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+
+.chat-app {
+    width: 100%;
+    max-width: none;
+    height: 100vh;
+
+    border-radius: 0;
+}
