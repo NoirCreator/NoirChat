@@ -59,7 +59,6 @@ function backToChats() {
 
 function sendMessage() {
 
-
     let input =
     document.getElementById("message-input");
 
@@ -68,12 +67,16 @@ function sendMessage() {
     input.value;
 
 
-
     if(text.trim() === "") {
-
         return;
-
     }
+
+
+    let time =
+    new Date().toLocaleTimeString([], {
+        hour: "2-digit",
+        minute: "2-digit"
+    });
 
 
 
@@ -81,12 +84,20 @@ function sendMessage() {
     document.createElement("div");
 
 
-
-    message.className = "message";
-
+    message.className = "message outgoing";
 
 
-    message.innerText = text;
+    message.innerHTML = `
+
+        <div>
+            ${text}
+        </div>
+
+        <span>
+            ${time}
+        </span>
+
+    `;
 
 
 
@@ -98,8 +109,13 @@ function sendMessage() {
 
     input.value = "";
 
-}
 
+    document
+    .getElementById("messages")
+    .scrollTop =
+    document.getElementById("messages").scrollHeight;
+
+}
 
 
 
