@@ -187,3 +187,59 @@ body {
     margin-top: 5px;
     color: #aaa;
 }
+body {
+    overflow: hidden;
+    position: relative;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+
+    width: 500px;
+    height: 500px;
+
+    background: #7b00ff;
+    opacity: 0.18;
+
+    filter: blur(120px);
+
+    top: -200px;
+    left: -150px;
+
+    animation: moveGlow 8s infinite alternate;
+}
+
+
+body::after {
+    content: "";
+
+    position: fixed;
+
+    width: 400px;
+    height: 400px;
+
+    background: #a855ff;
+    opacity: 0.12;
+
+    filter: blur(100px);
+
+    bottom: -150px;
+    right: -100px;
+
+    animation: moveGlow 10s infinite alternate;
+}
+
+
+@keyframes moveGlow {
+
+    from {
+        transform: translate(0,0);
+    }
+
+    to {
+        transform: translate(80px,60px);
+    }
+
+}
